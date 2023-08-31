@@ -17,4 +17,8 @@ The final model notebook is very similat to the base model. The differences are 
 2. Late dropout, 0.8 rate from epoch 15 instead of 0.4 from epoch 0.
 3. Batch size increased from 128 to 256.
 4. Filtering samplels by the Levenshtein scores calculated at section 3 with a treshild of 0.2 (instead of the Non-nan filtering done in section 1).
-The final model training notebook [is here](https://github.com/shlomoron/Google---American-Sign-Language-Fingerspelling-Recognition-12th-place-solution/blob/main/ASLFR_final_model.ipynb). 
+5. Maximum frames numbers 340 instead of 380 because with 380 the nodel could not complete the inference in time.
+The final model training notebook [is here](https://github.com/shlomoron/Google---American-Sign-Language-Fingerspelling-Recognition-12th-place-solution/blob/main/ASLFR_final_model.ipynb).
+### 6. Submit
+When submitting I further changed the maximum frames number to 320, since the original model still could not complete inference in time (According to prevous experiments it should have, but when I completed the training it couldn't and I had to find a way to make it a bit faster). The post-training max-frame change cause a drop in validation score of ~0.001.
+
