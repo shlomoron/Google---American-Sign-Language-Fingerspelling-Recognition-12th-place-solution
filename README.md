@@ -11,3 +11,9 @@ The preprocessing involves normalization of the features by their mean and std. 
 Use the basic model to make predictions for all the samples and calculate the Levenshtein distance. Samples with very low normalized Levenshtein distance (0.2) would be deemed as corrupted samples. This is done [here](https://github.com/shlomoron/Google---American-Sign-Language-Fingerspelling-Recognition-12th-place-solution/blob/main/ASLFR_base_model_predict.ipynb), which is the very similar to the base model notebook, except that it loads the weights of the model and make predictions and calculate the normalized Levenshtein distance scores instead of training. It loads the model weights from [here](https://www.kaggle.com/datasets/shlomoron/aslfr-base-model) and the calculated scores can be found [here](https://www.kaggle.com/datasets/shlomoron/aslfr-base-model-levs).  
 ### 4. Save the normalized Levenshtein distances scores as TFRecords
 This is done in kaggle. The notebook [is here](https://www.kaggle.com/code/shlomoron/aslfr-base-model-levs-tfrecords) and the resulting TFRecords dataset [is here](https://www.kaggle.com/datasets/shlomoron/aslfr-base-model-levs-as-tfrecords).
+### 5. Train the final model
+The final model notebook is very similat to the base model. The differences are as follow:
+1. Increased size: from 9,497,577 parameters to 9,497,577 parameters.
+2. Late dropout, 0.8 rate from epoch 15 instead of 0.4 from epoch 0.
+3. Batch size increased from 128 to 256.
+4. Filtering samplels by the Levenshtein scores calculated at section 3 with a treshild of 0.2 (instead of the Non-nan filtering done in section 1).
