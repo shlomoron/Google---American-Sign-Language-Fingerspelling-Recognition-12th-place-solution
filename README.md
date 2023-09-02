@@ -41,5 +41,6 @@ When submitting, I further lowered the maximum frames number to 320 (from 340) s
 5. [Final model weights](https://www.kaggle.com/datasets/shlomoron/aslfr-final-model/settings).
 
 ## Acknowledgements
-I based a lot of my work on Hoyso's solution to the previous competition; see [HERE](https://www.kaggle.com/competitions/asl-signs/discussion/406684) and [HERE](https://www.kaggle.com/competitions/asl-signs/discussion/406978). I also extensively used Rohith's code and ideas; see [HERE](https://www.kaggle.com/code/irohith/aslfr-ctc-based-on-prev-comp-1st-place).
+I based a lot of my work on Hoyso's solution to the previous competition; see [HERE](https://www.kaggle.com/competitions/asl-signs/discussion/406684) and [HERE](https://www.kaggle.com/competitions/asl-signs/discussion/406978). I also extensively used Rohith's code and ideas; see [HERE](https://www.kaggle.com/code/irohith/aslfr-ctc-based-on-prev-comp-1st-place).  
 
+[A summary in the Kaggle forum](https://www.kaggle.com/competitions/asl-fingerspelling/discussion/436457)
