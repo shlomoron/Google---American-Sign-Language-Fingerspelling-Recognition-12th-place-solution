@@ -12,13 +12,12 @@ Use the basic model to predict all the samples and calculate the Levenshtein dis
 ### 4. Save the normalized Levenshtein distance scores as TFRecords
 I do this in kaggle. The notebook [is here](https://www.kaggle.com/code/shlomoron/aslfr-base-model-levs-tfrecords) and the resulting TFRecords dataset [is here](https://www.kaggle.com/datasets/shlomoron/aslfr-base-model-levs-as-tfrecords).
 ### 5. Train the final model
-The final model notebook is very similat to the base model. The differences are as follow:
-1. Increased size: from 9,497,577 parameters to 9,497,577 parameters.
+The final model notebook is very similar to the base model. The differences are as follows:
+1. Increased size: from 9,497,577 parameters to 15,471,112 parameters.
 2. Late dropout, 0.8 rate from epoch 15 instead of 0.4 from epoch 0.
 3. Batch size increased from 128 to 256.
-4. Filtering samplels by the Levenshtein scores calculated at section 3 with a treshild of 0.2 (instead of the Non-nan filtering done in section 1).
-5. Maximum frames numbers 340 instead of 380 because with 380 the nodel could not complete the inference in time.
+4. Filtering samples by the Levenshtein scores calculated in section 3 with a threshold of 0.2 (instead of the No-nan filtering done in section 1).
+5. Maximum frames number 340 instead of 380 because with 380, the model could not complete the inference in time.
 The final model training notebook [is here](https://github.com/shlomoron/Google---American-Sign-Language-Fingerspelling-Recognition-12th-place-solution/blob/main/ASLFR_final_model.ipynb).
 ### 6. Submit
-When submitting I further lowered the maximum frames number to 320 (from 340), since the original model could not complete inference in time (According to prevous experiments it should have, but when I completed the training it couldn't and I had to find a way to make it a bit faster). The post-training max-frame change cause a drop in validation score of ~0.001. The submition nrebook is [HERE](https://www.kaggle.com/code/shlomoron/aslfr-final-model-submission).
-
+When submitting, I further lowered the maximum frames number to 320 (from 340) since the original model could not complete inference in time (According to previous experiments, it should have, but when I completed the training, it couldn't, and I had to find a way to make it a bit faster). The post-training max-frame lowering caused a drop in the validation score of ~0.001. The submission notebook is [HERE](https://www.kaggle.com/code/shlomoron/aslfr-final-model-submission).
