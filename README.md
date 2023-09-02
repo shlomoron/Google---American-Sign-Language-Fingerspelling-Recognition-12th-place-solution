@@ -21,3 +21,21 @@ The final model notebook is very similar to the base model. The differences are 
 The final model training notebook [is here](https://github.com/shlomoron/Google---American-Sign-Language-Fingerspelling-Recognition-12th-place-solution/blob/main/ASLFR_final_model.ipynb).
 ### 6. Submit
 When submitting, I further lowered the maximum frames number to 320 (from 340) since the original model could not complete inference in time (According to previous experiments, it should have, but when I completed the training, it couldn't, and I had to find a way to make it a bit faster). The post-training max-frame lowering caused a drop in the validation score of ~0.001. The submission notebook is [HERE](https://www.kaggle.com/code/shlomoron/aslfr-final-model-submission).
+
+
+## Summary of notebooks and data
+### Colab notebooks:
+1. [Base model training](https://github.com/shlomoron/Google---American-Sign-Language-Fingerspelling-Recognition-12th-place-solution/blob/main/ASLFR_base_model.ipynb).
+2. [Normalized Levenshtein distance scores calculation with base model](https://github.com/shlomoron/Google---American-Sign-Language-Fingerspelling-Recognition-12th-place-solution/blob/main/ASLFR_base_model_predict.ipynb).
+3. [Final model training](https://github.com/shlomoron/Google---American-Sign-Language-Fingerspelling-Recognition-12th-place-solution/blob/main/ASLFR_final_model.ipynb).
+### Kaggle notebooks:
+1. [Training TFRecords dataset creation](https://www.kaggle.com/shlomoron/aslfr-parquets-to-tfrecords).
+2. [Finding Kaggle dataset path in GCP]((https://www.kaggle.com/code/shlomoron/aslfr-gcp-path)
+3. [Normalized Levenshtein distance scores TFRecords dataset creation](https://www.kaggle.com/code/shlomoron/aslfr-base-model-levs-tfrecord)
+4. [Final submission](https://www.kaggle.com/code/shlomoron/aslfr-final-model-submission).
+### Kaggle datasets
+1. [Training data TFRecords](https://www.kaggle.com/datasets/shlomoron/aslfr-tfrecords).
+2. [Features means and STDs](https://www.kaggle.com/datasets/shlomoron/aslfr-means-and-stds).
+3. [Base model weights](https://www.kaggle.com/datasets/shlomoron/aslfr-base-model)
+4. [Normalized Levenshtein distance scores TFRecords dataset](https://www.kaggle.com/datasets/shlomoron/aslfr-base-model-levs-as-tfrecords)
+5. [Final model weights](https://www.kaggle.com/datasets/shlomoron/aslfr-final-model/settings).
