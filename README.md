@@ -30,7 +30,7 @@ When submitting, I further lowered the maximum frames number to 320 (from 340) s
 3. [Final model training](https://github.com/shlomoron/Google---American-Sign-Language-Fingerspelling-Recognition-12th-place-solution/blob/main/ASLFR_final_model.ipynb).
 ### Kaggle notebooks:
 1. [Training TFRecords dataset creation](https://www.kaggle.com/shlomoron/aslfr-parquets-to-tfrecords).
-2. [Finding Kaggle dataset path in GCP]((https://www.kaggle.com/code/shlomoron/aslfr-gcp-path)
+2. [Finding Kaggle dataset path in GCP](https://www.kaggle.com/code/shlomoron/aslfr-gcp-path)
 3. [Normalized Levenshtein distance scores TFRecords dataset creation](https://www.kaggle.com/code/shlomoron/aslfr-base-model-levs-tfrecord)
 4. [Final submission](https://www.kaggle.com/code/shlomoron/aslfr-final-model-submission).
 ### Kaggle datasets
