@@ -30,12 +30,12 @@ When submitting, I further lowered the maximum frames number to 320 (from 340) s
 3. [Final model training](https://github.com/shlomoron/Google---American-Sign-Language-Fingerspelling-Recognition-12th-place-solution/blob/main/ASLFR_final_model.ipynb).
 ### Kaggle notebooks:
 1. [Training TFRecords dataset creation](https://www.kaggle.com/shlomoron/aslfr-parquets-to-tfrecords).
-2. [Finding Kaggle dataset path in GCP](https://www.kaggle.com/code/shlomoron/aslfr-gcp-path)
-3. [Normalized Levenshtein distance scores TFRecords dataset creation](https://www.kaggle.com/code/shlomoron/aslfr-base-model-levs-tfrecord)
+2. [Finding Kaggle dataset path in GCP](https://www.kaggle.com/code/shlomoron/aslfr-gcp-path).
+3. [Normalized Levenshtein distance scores TFRecords dataset creation](https://www.kaggle.com/code/shlomoron/aslfr-base-model-levs-tfrecord).
 4. [Final submission](https://www.kaggle.com/code/shlomoron/aslfr-final-model-submission).
 ### Kaggle datasets
 1. [Training data TFRecords](https://www.kaggle.com/datasets/shlomoron/aslfr-tfrecords).
 2. [Features means and STDs](https://www.kaggle.com/datasets/shlomoron/aslfr-means-and-stds).
-3. [Base model weights](https://www.kaggle.com/datasets/shlomoron/aslfr-base-model)
-4. [Normalized Levenshtein distance scores TFRecords dataset](https://www.kaggle.com/datasets/shlomoron/aslfr-base-model-levs-as-tfrecords)
+3. [Base model weights](https://www.kaggle.com/datasets/shlomoron/aslfr-base-model).
+4. [Normalized Levenshtein distance scores TFRecords dataset](https://www.kaggle.com/datasets/shlomoron/aslfr-base-model-levs-as-tfrecords).
 5. [Final model weights](https://www.kaggle.com/datasets/shlomoron/aslfr-final-model/settings).
