@@ -39,3 +39,7 @@ When submitting, I further lowered the maximum frames number to 320 (from 340) s
 3. [Base model weights](https://www.kaggle.com/datasets/shlomoron/aslfr-base-model).
 4. [Normalized Levenshtein distance scores TFRecords dataset](https://www.kaggle.com/datasets/shlomoron/aslfr-base-model-levs-as-tfrecords).
 5. [Final model weights](https://www.kaggle.com/datasets/shlomoron/aslfr-final-model/settings).
+
+## Acknowledgements
+I based a lot of my work on Hoyso's solution to the previous competition; see [HERE](https://www.kaggle.com/competitions/asl-signs/discussion/406684) and [HERE](https://www.kaggle.com/competitions/asl-signs/discussion/406978). I also extensively used Rohith's code and ideas; see [HERE](https://www.kaggle.com/code/irohith/aslfr-ctc-based-on-prev-comp-1st-place).
+
